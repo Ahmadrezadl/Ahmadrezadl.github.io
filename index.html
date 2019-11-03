@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Page</title>
+<meta name="generator" content="WYSIWYG Web Builder 15 - http://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="Untitled1.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   function waitForItUpdate()
+   {
+      var dateFuture = new Date("December 31, 2019 12:00:00");
+      var dateNow = new Date();
+      var seconds = Math.floor((dateFuture - (dateNow))/1000);
+      var minutes = Math.floor(seconds/60);
+      var hours = Math.floor(minutes/60);
+      var days = Math.floor(hours/24);
+
+      hours = Math.round(hours-(days*24));
+      minutes = Math.round(minutes-(days*24*60)-(hours*60));
+      seconds = Math.round(seconds-(days*24*60*60)-(hours*60*60)-(minutes*60));
+                                 
+      $('#waitForItDays').html(days);
+      $('#waitForItHours').html(hours);
+      $('#waitForItMinutes').html(minutes);
+      $('#waitForItSeconds').html(seconds);   
+   }
+   waitForItUpdate();
+   setInterval(waitForItUpdate, 1000);
+});
+</script>
+</head>
+<body>
+<div id="wb_waitForItTitle">
+<div id="waitForItTitle">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_waitForItHeading1" style="display:inline-block;width:100%;z-index:0;">
+<h1 id="waitForItHeading1">سایت در دست ساخت میباشد</h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_waitForIt">
+<div id="waitForIt">
+<div class="row">
+<div class="col-1">
+</div>
+<div class="col-2">
+<div id="wb_waitForItDays" style="display:inline-block;width:100%;z-index:1;">
+<h2 id="waitForItDays">0</h2>
+</div>
+<div id="wb_waitForItText1">
+<span style="color:#FFFFFF;font-family:Arial;font-size:20px;"><strong>DAYS</strong></span>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_waitForItHours" style="display:inline-block;width:100%;z-index:3;">
+<h2 id="waitForItHours">0</h2>
+</div>
+<div id="wb_waitForItText2">
+<span style="color:#FFFFFF;font-family:Arial;font-size:20px;"><strong>HOURS</strong></span>
+</div>
+</div>
+<div class="col-4">
+<div id="wb_waitForItMinutes" style="display:inline-block;width:100%;z-index:5;">
+<h2 id="waitForItMinutes">0</h2>
+</div>
+<div id="wb_waitForItText3">
+<span style="color:#FFFFFF;font-family:Arial;font-size:20px;"><strong>MINUTES</strong></span>
+</div>
+</div>
+<div class="col-5">
+<div id="wb_waitForItSeconds" style="display:inline-block;width:100%;z-index:7;">
+<h2 id="waitForItSeconds">0</h2>
+</div>
+<div id="wb_waitForItText4">
+<span style="color:#FFFFFF;font-family:Arial;font-size:20px;"><strong>SECONDS</strong></span>
+</div>
+</div>
+<div class="col-6">
+
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_waitForItHeading2" style="display:inline-block;width:100%;z-index:10;">
+<h2 id="waitForItHeading2"><a href="./Main.html">نمایش نسخه آزامایشی</a></h2>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
