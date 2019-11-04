@@ -5,102 +5,134 @@
 <title>Untitled Page</title>
 <meta name="generator" content="WYSIWYG Web Builder 15 - http://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="base/jquery-ui.min.css" rel="stylesheet">
+<link href="font-awesome.min.css" rel="stylesheet">
 <link href="Untitled1.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
 <script>
 $(document).ready(function()
 {
-   function waitForItUpdate()
+   $("a[href*='#skills']").click(function(event)
    {
-      var dateFuture = new Date("December 31, 2019 12:00:00");
-      var dateNow = new Date();
-      var seconds = Math.floor((dateFuture - (dateNow))/1000);
-      var minutes = Math.floor(seconds/60);
-      var hours = Math.floor(minutes/60);
-      var days = Math.floor(hours/24);
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_skills').offset().top }, 600, 'linear');
+   });
+   $("#progressbar_uidesign").progressbar(
+   {
+      value: 80
+   });
+   $("#progressbar_jquery").progressbar(
+   {
+      value: 80
+   });
+   $("#progressbar_php").progressbar(
+   {
+      value: 80
+   });
+   $("#progressbar_html").progressbar(
+   {
+      value: 100
+   });
+});
+</script>
 
-      hours = Math.round(hours-(days*24));
-      minutes = Math.round(minutes-(days*24*60)-(hours*60));
-      seconds = Math.round(seconds-(days*24*60*60)-(hours*60*60)-(minutes*60));
-                                 
-      $('#waitForItDays').html(days);
-      $('#waitForItHours').html(hours);
-      $('#waitForItMinutes').html(minutes);
-      $('#waitForItSeconds').html(seconds);   
-   }
-   waitForItUpdate();
-   setInterval(waitForItUpdate, 1000);
+<script>
+$(document).ready(function()
+{
+   var $progressbars = $('.ui-progressbar');
+   
+   $progressbars.each(function() 
+   {
+     var $obj = $(this);
+     $obj.data('value', $obj.progressbar('option', 'value'));
+     $obj.data('done', false);
+     $obj.progressbar('option', 'value', 0);
+    
+     $obj.css('position', 'relative');
+     $obj.append('<div class="progress-label">0%</div>');
+   });
+   $(window).bind('scroll', function() 
+   {
+      $progressbars.each(function() 
+      {
+         var $obj = $(this);
+         if (!$obj.data('done') && $(window).scrollTop() + $(window).height() >= $obj.offset().top) 
+         {
+            $obj.data('done', true);
+            $obj.animate({scroll: 1}, 
+            { 
+               duration: 3000, 
+               step: function(now) 
+               {
+                  var $obj = $(this);
+                  var val = Math.round($obj.data('value') * now);
+                  $obj.progressbar('option', 'value', val);
+                  $obj.find('.progress-label').text(val + '%').css('color', (val > 50) ? "#FFFFFF" : "#265A88");
+               }
+            });
+         }
+      });
+   }).triggerHandler('scroll');
 });
 </script>
 </head>
 <body>
-<div id="wb_waitForItTitle">
-<div id="waitForItTitle">
-<div class="row">
-<div class="col-1">
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid3">
-<div id="LayoutGrid3">
-<div class="row">
-<div class="col-1">
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid4">
-<div id="LayoutGrid4">
-<div class="row">
-<div class="col-1">
-<div id="wb_waitForItHeading1" style="display:inline-block;width:100%;z-index:0;">
-<h1 id="waitForItHeading1">سایت در دست ساخت میباشد</h1>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_waitForIt">
-<div id="waitForIt">
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6-overlay"></div>
+<div id="LayoutGrid6">
 <div class="row">
 <div class="col-1">
 </div>
 <div class="col-2">
-<div id="wb_waitForItDays" style="display:inline-block;width:100%;z-index:1;">
-<h2 id="waitForItDays">0</h2>
+<div id="wb_Heading7" style="display:inline-block;width:100%;z-index:10;">
+<h1 id="Heading7">Ahmadrezadl Accounts:</h1>
 </div>
-<div id="wb_waitForItText1">
-<span style="color:#FFFFFF;font-family:Arial;font-size:20px;"><strong>DAYS</strong></span>
+<div id="wb_FontAwesomeIcon1" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:11;">
+<a href="https://steamcommunity.com/id/Ahmadrezadl"><div id="FontAwesomeIcon1"><i class="fa fa-steam-square"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon2" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:12;">
+<a href="http://instagram.com/Ahmadrezadl"><div id="FontAwesomeIcon2"><i class="fa fa-instagram"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon5" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:13;">
+<a href="http://telegram.me/Ahmadrezadl"><div id="FontAwesomeIcon5"><i class="fa fa-telegram"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon6" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:14;">
+<a href="https://www.reddit.com/user/Ahmadrezadl/"><div id="FontAwesomeIcon6"><i class="fa fa-reddit-alien"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon7" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:15;">
+<a href="mailto:Ahmadrezakamali121@yaho.com"><div id="FontAwesomeIcon7"><i class="fa fa-yahoo"></i></div></a>
+</div>
+<div id="wb_FontAwesomeIcon9" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:16;">
+<a href="http://github.com/Ahmadrezadl"><div id="FontAwesomeIcon9"><i class="fa fa-github"></i></div></a>
+</div>
+<div id="wb_skills">
+<div id="skills">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text5">
+<span style="color:#FFFFFF;font-family:Arial;font-size:43px;"><strong>My Skills:</strong></span>
+</div>
+<label for="" id="Label5" style="display:block;width:100%;z-index:1;">Game Maker Studio:</label>
+<div id="progressbar_html"  style="display:block;width:100%;height:28px;z-index:2;">
+</div>
+<label for="" id="Label6" style="display:block;width:100%;z-index:3;">C & C++:</label>
+<div id="progressbar_uidesign"  style="display:block;width:100%;height:28px;z-index:4;">
+</div>
+<label for="" id="Label7" style="display:block;width:100%;z-index:5;">Java:</label>
+<div id="progressbar_jquery"  style="display:block;width:100%;height:28px;z-index:6;">
+</div>
+<label for="" id="Label8" style="display:block;width:100%;z-index:7;">Python:</label>
+<div id="progressbar_php"  style="display:block;width:100%;height:28px;z-index:8;">
+</div>
+
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="col-3">
-<div id="wb_waitForItHours" style="display:inline-block;width:100%;z-index:3;">
-<h2 id="waitForItHours">0</h2>
-</div>
-<div id="wb_waitForItText2">
-<span style="color:#FFFFFF;font-family:Arial;font-size:20px;"><strong>HOURS</strong></span>
-</div>
-</div>
-<div class="col-4">
-<div id="wb_waitForItMinutes" style="display:inline-block;width:100%;z-index:5;">
-<h2 id="waitForItMinutes">0</h2>
-</div>
-<div id="wb_waitForItText3">
-<span style="color:#FFFFFF;font-family:Arial;font-size:20px;"><strong>MINUTES</strong></span>
-</div>
-</div>
-<div class="col-5">
-<div id="wb_waitForItSeconds" style="display:inline-block;width:100%;z-index:7;">
-<h2 id="waitForItSeconds">0</h2>
-</div>
-<div id="wb_waitForItText4">
-<span style="color:#FFFFFF;font-family:Arial;font-size:20px;"><strong>SECONDS</strong></span>
-</div>
-</div>
-<div class="col-6">
-
 </div>
 </div>
 </div>
@@ -109,9 +141,6 @@ $(document).ready(function()
 <div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
-<div id="wb_waitForItHeading2" style="display:inline-block;width:100%;z-index:10;">
-<h2 id="waitForItHeading2"><a href="./Main.html">نمایش نسخه آزامایشی</a></h2>
-</div>
 </div>
 </div>
 </div>
