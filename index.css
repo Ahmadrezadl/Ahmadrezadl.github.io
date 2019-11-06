@@ -1,6 +1,11 @@
 body
 {
    background-color: #FFFFFF;
+   background-image: url(images/maxresdefault.jpg);
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
    color: #000000;
    font-family: Arial;
    font-weight: normal;
@@ -18,10 +23,7 @@ body
    text-align: center;
    width: 100%;
    background-color: transparent;
-   background-image: url(images/maxresdefault.jpg);
-   background-repeat: repeat;
-   background-position: center center;
-   background-size: cover;
+   background-image: none;
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    margin: 0;
@@ -98,16 +100,6 @@ body
    float: none;
    width: 100%;
 }
-}
-#LayoutGrid6-overlay
-{
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   background-color: #2E2E2E;
-   opacity: 0.78;
 }
 #wb_skills
 {
@@ -542,184 +534,113 @@ body
 {
    text-align: left;
 }
-#wb_LayoutGrid1
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   background-color: #383838;
-   background-image: none;
-   border: 0px solid #CCCCCC;
-   box-sizing: border-box;
-   margin: 0;
-   margin-right: auto;
-   margin-left: auto;
-   max-width: 1024px;
-}
-#LayoutGrid1
-{
-   box-sizing: border-box;
-   padding: 0px 15px 25px 15px;
-   margin-right: auto;
-   margin-left: auto;
-}
-#LayoutGrid1 > .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#LayoutGrid1 > .row > .col-1
-{
-   box-sizing: border-box;
-   font-size: 0px;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#LayoutGrid1 > .row > .col-1
-{
-   float: left;
-}
-#LayoutGrid1 > .row > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 100%;
-   text-align: center;
-}
-#LayoutGrid1:before,
-#LayoutGrid1:after,
-#LayoutGrid1 .row:before,
-#LayoutGrid1 .row:after
-{
-   display: table;
-   content: " ";
-}
-#LayoutGrid1:after,
-#LayoutGrid1 .row:after
-{
-   clear: both;
-}
-@media (max-width: 480px)
-{
-#LayoutGrid1 > .row > .col-1
-{
-   float: none;
-   width: 100%;
-}
-}
-#progressbar_uidesign
+#progressbar_c
 {
    margin: 0px 0px 10px 0px;
    position: relative;
 }
-#progressbar_uidesign, #progressbar_uidesign .ui-corner-right
+#progressbar_c, #progressbar_c .ui-corner-right
 {
    border-bottom-right-radius: 0px;
    border-top-right-radius: 0px;
 }
-#progressbar_uidesign, #progressbar_uidesign .ui-corner-left
+#progressbar_c, #progressbar_c .ui-corner-left
 {
    border-bottom-left-radius: 0px;
    border-top-left-radius: 0px;
 }
-#progressbar_uidesign,ui-widget-content
+#progressbar_c,ui-widget-content
 {
    border-color: #383838;
    background-color: #FFFFFF;
    background-image: none;
 }
-#progressbar_uidesign .ui-widget-header
+#progressbar_c .ui-widget-header
 {
-   border-color: #c10050;
-   background-color: #c10050;
+   border-color: #A52A2A;
+   background-color: #A52A2A;
    background-image: none;
 }
-#progressbar_jquery
+#progressbar_java
 {
    margin: 0px 0px 10px 0px;
    opacity: 0.98;
    position: relative;
 }
-#progressbar_jquery, #progressbar_jquery .ui-corner-right
+#progressbar_java, #progressbar_java .ui-corner-right
 {
    border-bottom-right-radius: 0px;
    border-top-right-radius: 0px;
 }
-#progressbar_jquery, #progressbar_jquery .ui-corner-left
+#progressbar_java, #progressbar_java .ui-corner-left
 {
    border-bottom-left-radius: 0px;
    border-top-left-radius: 0px;
 }
-#progressbar_jquery,ui-widget-content
+#progressbar_java,ui-widget-content
 {
    border-color: #383838;
    background-color: #FFFFFF;
    background-image: none;
 }
-#progressbar_jquery .ui-widget-header
+#progressbar_java .ui-widget-header
 {
-   border-color: #c10050;
-   background-color: #c10050;
+   border-color: #A52A2A;
+   background-color: #A52A2A;
    background-image: none;
 }
-#progressbar_php
+#progressbar_python
 {
    margin: 0px 0px 10px 0px;
    position: relative;
 }
-#progressbar_php, #progressbar_php .ui-corner-right
+#progressbar_python, #progressbar_python .ui-corner-right
 {
    border-bottom-right-radius: 0px;
    border-top-right-radius: 0px;
 }
-#progressbar_php, #progressbar_php .ui-corner-left
+#progressbar_python, #progressbar_python .ui-corner-left
 {
    border-bottom-left-radius: 0px;
    border-top-left-radius: 0px;
 }
-#progressbar_php,ui-widget-content
+#progressbar_python,ui-widget-content
 {
    border-color: #383838;
    background-color: #FFFFFF;
    background-image: none;
 }
-#progressbar_php .ui-widget-header
+#progressbar_python .ui-widget-header
 {
-   border-color: #c10050;
-   background-color: #c10050;
+   border-color: #A52A2A;
+   background-color: #A52A2A;
    background-image: none;
 }
-#progressbar_html
+#progressbar_gms
 {
    margin: 0px 0px 10px 0px;
    position: relative;
 }
-#progressbar_html, #progressbar_html .ui-corner-right
+#progressbar_gms, #progressbar_gms .ui-corner-right
 {
    border-bottom-right-radius: 0px;
    border-top-right-radius: 0px;
 }
-#progressbar_html, #progressbar_html .ui-corner-left
+#progressbar_gms, #progressbar_gms .ui-corner-left
 {
    border-bottom-left-radius: 0px;
    border-top-left-radius: 0px;
 }
-#progressbar_html,ui-widget-content
+#progressbar_gms,ui-widget-content
 {
    border-color: #383838;
    background-color: #FFFFFF;
    background-image: none;
 }
-#progressbar_html .ui-widget-header
+#progressbar_gms .ui-widget-header
 {
-   border-color: #c10050;
-   background-color: #c10050;
+   border-color: #A52A2A;
+   background-color: #A52A2A;
    background-image: none;
 }
 #Label5
@@ -785,6 +706,135 @@ body
    margin: 0;
    text-align: left;
    vertical-align: top;
+}
+#Label1
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   box-sizing: border-box;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#pandv
+{
+   margin: 0px 0px 10px 0px;
+   position: relative;
+}
+#pandv, #pandv .ui-corner-right
+{
+   border-bottom-right-radius: 0px;
+   border-top-right-radius: 0px;
+}
+#pandv, #pandv .ui-corner-left
+{
+   border-bottom-left-radius: 0px;
+   border-top-left-radius: 0px;
+}
+#pandv,ui-widget-content
+{
+   border-color: #383838;
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#pandv .ui-widget-header
+{
+   border-color: #A52A2A;
+   background-color: #A52A2A;
+   background-image: none;
+}
+#Label2
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   box-sizing: border-box;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#unity
+{
+   margin: 0px 0px 10px 0px;
+   position: relative;
+}
+#unity, #unity .ui-corner-right
+{
+   border-bottom-right-radius: 0px;
+   border-top-right-radius: 0px;
+}
+#unity, #unity .ui-corner-left
+{
+   border-bottom-left-radius: 0px;
+   border-top-left-radius: 0px;
+}
+#unity,ui-widget-content
+{
+   border-color: #383838;
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#unity .ui-widget-header
+{
+   border-color: #A52A2A;
+   background-color: #A52A2A;
+   background-image: none;
+}
+#Label3
+{
+   border: 0px solid #CCCCCC;
+   border-radius: 4px;
+   background-color: transparent;
+   background-image: none;
+   color :#FFFFFF;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 13px;
+   box-sizing: border-box;
+   padding: 4px 4px 4px 4px;
+   margin: 0;
+   text-align: left;
+   vertical-align: top;
+}
+#html
+{
+   margin: 0px 0px 10px 0px;
+   position: relative;
+}
+#html, #html .ui-corner-right
+{
+   border-bottom-right-radius: 0px;
+   border-top-right-radius: 0px;
+}
+#html, #html .ui-corner-left
+{
+   border-bottom-left-radius: 0px;
+   border-top-left-radius: 0px;
+}
+#html,ui-widget-content
+{
+   border-color: #383838;
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#html .ui-widget-header
+{
+   border-color: #A52A2A;
+   background-color: #A52A2A;
+   background-image: none;
 }
 .progress-label 
 {
