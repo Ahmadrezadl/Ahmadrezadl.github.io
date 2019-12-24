@@ -3,92 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>Ahmadrezadl's Profile</title>
-<meta name="generator" content="Ahmadrezadl">
+<meta name="generator" content="WYSIWYG Web Builder 15 - http://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="base/jquery-ui.min.css" rel="stylesheet">
 <link href="font-awesome.min.css" rel="stylesheet">
-<link href="fonts.css" rel="stylesheet">
+<link href="Untitled1.css" rel="stylesheet">
 <link href="index.css" rel="stylesheet">
-<script src="jquery-1.12.4.min.js"></script>
-<script src="jquery-ui.min.js"></script>
-<script>
-$(document).ready(function()
-{
-   $("a[href*='#skills']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_skills').offset().top }, 600, 'linear');
-   });
-   $("#progressbar_c").progressbar(
-   {
-      value: 70
-   });
-   $("#progressbar_java").progressbar(
-   {
-      value: 90
-   });
-   $("#progressbar_python").progressbar(
-   {
-      value: 80
-   });
-   $("#progressbar_gms").progressbar(
-   {
-      value: 100
-   });
-   $("#pandv").progressbar(
-   {
-      value: 60
-   });
-   $("#unity").progressbar(
-   {
-      value: 40
-   });
-   $("#html").progressbar(
-   {
-      value: 20
-   });
-});
-</script>
-
-<script>
-$(document).ready(function()
-{
-   var $progressbars = $('.ui-progressbar');
-   
-   $progressbars.each(function() 
-   {
-     var $obj = $(this);
-     $obj.data('value', $obj.progressbar('option', 'value'));
-     $obj.data('done', false);
-     $obj.progressbar('option', 'value', 0);
-    
-     $obj.css('position', 'relative');
-     $obj.append('<div class="progress-label">0%</div>');
-   });
-   $(window).bind('scroll', function() 
-   {
-      $progressbars.each(function() 
-      {
-         var $obj = $(this);
-         if (!$obj.data('done') && $(window).scrollTop() + $(window).height() >= $obj.offset().top) 
-         {
-            $obj.data('done', true);
-            $obj.animate({scroll: 1}, 
-            { 
-               duration: 3000, 
-               step: function(now) 
-               {
-                  var $obj = $(this);
-                  var val = Math.round($obj.data('value') * now);
-                  $obj.progressbar('option', 'value', val);
-                  $obj.find('.progress-label').text(val + '%').css('color', (val > 50) ? "#FFFFFF" : "#265A88");
-               }
-            });
-         }
-      });
-   }).triggerHandler('scroll');
-});
-</script>
 </head>
 <body>
 <div id="wb_LayoutGrid6">
@@ -98,62 +17,141 @@ $(document).ready(function()
 <div class="col-1">
 </div>
 <div class="col-2">
-<div id="wb_Heading7" style="display:inline-block;width:100%;z-index:15;">
-<h1 id="Heading7">Ahmadrezadl Accounts:</h1>
+<div id="wb_Heading7" style="display:inline-block;width:100%;z-index:0;">
+<h1 id="Heading7">Ahmadrezadl</h1>
 </div>
-<div id="wb_FontAwesomeIcon1" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:16;">
+<div id="wb_FontAwesomeIcon1" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:1;">
 <a href="https://steamcommunity.com/id/Ahmadrezadl"><div id="FontAwesomeIcon1"><i class="fa fa-steam-square"></i></div></a>
 </div>
-<div id="wb_FontAwesomeIcon2" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:17;">
+<div id="wb_FontAwesomeIcon2" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:2;">
 <a href="http://instagram.com/Ahmadrezadl"><div id="FontAwesomeIcon2"><i class="fa fa-instagram"></i></div></a>
 </div>
-<div id="wb_FontAwesomeIcon5" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:18;">
+<div id="wb_FontAwesomeIcon5" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:3;">
 <a href="http://telegram.me/Ahmadrezadl"><div id="FontAwesomeIcon5"><i class="fa fa-telegram"></i></div></a>
 </div>
-<div id="wb_FontAwesomeIcon6" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:19;">
+<div id="wb_FontAwesomeIcon6" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:4;">
 <a href="https://www.reddit.com/user/Ahmadrezadl/"><div id="FontAwesomeIcon6"><i class="fa fa-reddit-alien"></i></div></a>
 </div>
-<div id="wb_FontAwesomeIcon7" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:20;">
+<div id="wb_FontAwesomeIcon7" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:5;">
 <a href="mailto:Ahmadrezakamali121@yaho.com"><div id="FontAwesomeIcon7"><i class="fa fa-yahoo"></i></div></a>
 </div>
-<div id="wb_FontAwesomeIcon9" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:21;">
+<div id="wb_FontAwesomeIcon9" style="display:inline-block;width:22px;height:22px;text-align:center;z-index:6;">
 <a href="http://github.com/Ahmadrezadl"><div id="FontAwesomeIcon9"><i class="fa fa-github"></i></div></a>
-</div>
-<div id="wb_skills">
-<div id="skills">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text5">
-<span style="color:#FFFFFF;font-family:Arial;font-size:43px;"><strong>My Skills:</strong></span>
-</div>
-<label for="" id="Label5" style="display:block;width:100%;z-index:1;">Game Maker Studio:</label>
-<div id="progressbar_gms"  style="display:block;width:100%;height:28px;z-index:2;">
-</div>
-<label for="" id="Label6" style="display:block;width:100%;z-index:3;">C & C++:</label>
-<div id="progressbar_c"  style="display:block;width:100%;height:28px;z-index:4;">
-</div>
-<label for="" id="Label7" style="display:block;width:100%;z-index:5;">Java:</label>
-<div id="progressbar_java"  style="display:block;width:100%;height:28px;z-index:6;">
-</div>
-<label for="" id="Label8" style="display:block;width:100%;z-index:7;">Python:</label>
-<div id="progressbar_python"  style="display:block;width:100%;height:28px;z-index:8;">
-</div>
-<label for="" id="Label1" style="display:block;width:100%;z-index:9;">Photo and Video Edit:</label>
-<div id="pandv"  style="display:block;width:100%;height:28px;z-index:10;">
-</div>
-<label for="" id="Label2" style="display:block;width:100%;z-index:11;">Unity and C#:</label>
-<div id="unity"  style="display:block;width:100%;height:28px;z-index:12;">
-</div>
-<label for="" id="Label3" style="display:block;width:100%;z-index:13;">HTML and CSS:</label>
-<div id="html"  style="display:block;width:100%;height:28px;z-index:14;">
-</div>
-</div>
-</div>
-</div>
 </div>
 </div>
 <div class="col-3">
-
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:7;">
+<img src="images/jpotify.png" id="Image1" alt="" title="Jpotify Logo">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text3">
+<span style="color:#DC143C;font-family:Arial;font-size:43px;"><strong>Jpotify<br></strong></span><span style="color:#DC143C;font-family:Arial;font-size:20px;"><em><br>Jpotify is a Simple Music Player programmed by Java Swing and JLayer 1.0.1 Library.<br>Jpotify or Spotify? this is the question...<br><br>Language: Java<br><br>contributors: <a href="https://github.com/Ahmadrezadl">Ahmadrezadl </a>- <a href="https://github.com/elhamrazi">Elhram Raazi</a><br></em></span>
+</div>
+<div id="wb_Shape1" style="display:inline-block;width:132px;height:40px;z-index:9;position:relative;">
+<a href="https://github.com/Ahmadrezadl/Jpotify" title="Go to github Repository"><div id="Shape1"><div id="Shape1_text"><span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Go to Repository</span></div></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_Divider2">
+<div id="Divider2-overlay"></div>
+<div id="Divider2">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text1">
+<span style="color:#8A2BE2;font-family:Arial;font-size:43px;"><strong>Movie Sorter<br></strong></span><span style="color:#8A2BE2;font-family:Arial;font-size:20px;"><em><br>Create folder for your each movie , Series and their subtitles easily.<br>More features coming soon...<br><br>Language: Python<br><br>contributors: <a href="https://github.com/Ahmadrezadl">Ahmadrezadl </a><br></em></span>
+</div>
+<div id="wb_Shape2" style="display:inline-block;width:132px;height:40px;z-index:11;position:relative;">
+<a href="https://github.com/Ahmadrezadl/MovieSorter" title="Go to github Repository"><div id="Shape2"><div id="Shape2_text"><span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Go to Repository</span></div></div></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:12;">
+<img src="images/MovieSorterLogo.png" id="Image2" alt="" title="Movie Sorter Logo">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2-overlay"></div>
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Image3" style="display:inline-block;width:100%;height:auto;z-index:13;">
+<img src="images/quera ans.png" id="Image3" alt="" title="Quera Answers Logo">
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text2">
+<span style="color:#0000FF;font-family:Arial;font-size:43px;"><strong>Quera Answers<br></strong></span><span style="color:#0000FF;font-family:Arial;font-size:20px;"><em><br>Soulutions of quera.ir problems.<br>Quera is a persian contest site like codeforcess.<br><br><br><br><br>contributors: <a href="https://github.com/Ahmadrezadl">Ahmadrezadl </a>- <a href="https://github.com/kasrazarei39">Kasra Zarei<br></a></em></span>
+</div>
+<div id="wb_Shape3" style="display:inline-block;width:132px;height:40px;z-index:15;position:relative;">
+<a href="https://github.com/Ahmadrezadl/Quera-Answers" title="Go to github Repository"><div id="Shape3"><div id="Shape3_text"><span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Go to Repository</span></div></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5-overlay"></div>
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text4">
+<span style="color:#DC143C;font-family:Arial;font-size:43px;"><strong>JFileManager<br></strong></span><span style="color:#DC143C;font-family:Arial;font-size:20px;"><em><br>Simple File Manager.<br>Open , Copy , Cut and ... your system files and folders.<br><br><br>Language: Java<br><br>contributors: <a href="https://github.com/Ahmadrezadl">Ahmadrezadl </a><br></em></span>
+</div>
+<div id="wb_Shape4" style="display:inline-block;width:132px;height:40px;z-index:17;position:relative;">
+<a href="https://github.com/Ahmadrezadl/MovieSorter" title="Go to github Repository"><div id="Shape4"><div id="Shape4_text"><span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Go to Repository</span></div></div></a>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Image4" style="display:inline-block;width:100%;height:auto;z-index:18;">
+<img src="images/Jfilemanagerlogo.png" id="Image4" alt="" title="Movie Sorter Logo">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8-overlay"></div>
+<div id="LayoutGrid8">
+<div class="row">
+<div class="col-1">
 </div>
 </div>
 </div>
