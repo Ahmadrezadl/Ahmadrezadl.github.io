@@ -458,7 +458,7 @@ body
    display: table;
    text-align: center;
    width: 100%;
-   background-color: rgba(46,46,46,0.49);
+   background-color: rgba(0,0,0,0.49);
    background-image: none;
    border: 5px dotted #FF0000;
    box-sizing: border-box;
@@ -671,7 +671,7 @@ body
    display: table;
    text-align: center;
    width: 100%;
-   background-color: rgba(46,46,46,0.49);
+   background-color: rgba(0,0,0,0.49);
    background-image: none;
    border: 5px dotted #9400D3;
    box-sizing: border-box;
@@ -884,7 +884,7 @@ body
    display: table;
    text-align: center;
    width: 100%;
-   background-color: rgba(46,46,46,0.49);
+   background-color: rgba(0,0,0,0.49);
    background-image: none;
    border: 5px dotted #0000FF;
    box-sizing: border-box;
@@ -1097,7 +1097,7 @@ body
    display: table;
    text-align: center;
    width: 100%;
-   background-color: rgba(46,46,46,0.49);
+   background-color: rgba(0,0,0,0.49);
    background-image: none;
    border: 5px dotted #DC143C;
    box-sizing: border-box;
